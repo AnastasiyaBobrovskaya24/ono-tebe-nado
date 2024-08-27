@@ -58,6 +58,12 @@
 .header__address {
   justify-self: end;
 }
+/*
+Перечитала теорию по данному вопросу, но не понимаю какие цифры надо указать в строчках top/left? На что ориентироваться?
+position: absolute;
+top: ??px;
+  left: ??px;
+*/
 
 .overlay {
   position: absolute;
@@ -93,11 +99,9 @@
   display: flex;
   flex-direction: column;
   padding: 165px 50px 50px;
-  background-image: url(../images/cover.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url(../images/cover.jpg) no-repeat center / cover;
 }
+/*background -запись сократила */
 
 .cover__title {
   z-index: 1;
@@ -129,11 +133,13 @@
   border: 1px solid #fff;
   padding: 12px 32px;
   color: #fff;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 22px;
   background-color: transparent;
   text-transform: uppercase;
 }
+
+/*доп.шрифт дописала */
 
 .lots {
   padding: 180px 24px 0;
@@ -224,8 +230,8 @@
 .about__column {
   display: grid;
   grid-template-columns: 334px 718px;
-  height: 595px;
 }
+/*фиксированную высоту убрала */
 
 .about__logo {
   display: flex;
